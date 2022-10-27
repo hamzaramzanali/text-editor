@@ -23,7 +23,6 @@ module.exports = () => {
         template: './index.html',
         title: 'J.A.T.E.'
       }),
-     new GenerateSW,
       // Injects our custom service worker
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -34,9 +33,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
-        short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        name: 'Just Another Text Editor',
+        short_name: 'J.A.T.E.',
+        description: 'Add and Edit your Text!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
